@@ -1,0 +1,104 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+*.tmp
+*.bak
+*.old
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# Coverage
+coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+
+# Dependency directories
+build/
+
+# Generated Dart docs
+**/doc/api/
+
+# iOS
+ios/Flutter/.last_build_id
+ios/Flutter/ephemeral/
+ios/Flutter/Generated.xcconfig
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/build/
+*.xcworkspace/
+*.xcuserstate
+*.xcuserdata/
+
+# macOS
+macos/build/
+macos/Flutter/ephemeral/
+macos/Flutter/GeneratedPluginRegistrant.swift
+
+# Android
+android/.gradle/
+android/.idea/
+android/app/build/
+android/captures/
+android/gradle/
+android/local.properties
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Windows
+windows/build/
+windows/flutter/
+windows/CMakeFiles/
+windows/CMakeCache.txt
+windows/Makefile
+
+# Linux
+linux/build/
+linux/flutter/
+linux/CMakeFiles/
+linux/CMakeCache.txt
+linux/Makefile
+
+# Web
+web/generated_plugin_registrant.dart
+
+# VS Code
+.vscode/  # Remove this line if you want to keep VS Code launch/tasks settings
+
+# IntelliJ / Android Studio
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Firebase / Crashlytics
+firebase-debug.log
+crashlytics-build.properties
+fabric.properties
+
+# Fastlane (optional)
+fastlane/report.xml
+fastlane/screenshots/
+fastlane/test_output/
+
+# Melos (optional for monorepo)
+.melos_tool/
