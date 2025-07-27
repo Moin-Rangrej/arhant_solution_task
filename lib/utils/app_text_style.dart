@@ -1,0 +1,55 @@
+import 'package:arhant_solution_task/utils/utils.dart';
+import 'package:flutter/material.dart';
+
+TextStyle labelStyle() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontSize: fontSize.fontSize_18,
+    fontWeight: FontWeight.w700,
+    color: appColor.AppColor_black,
+  );
+}
+
+TextStyle textfieldStyle() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontSize: fontSize.fontSize_16,
+    fontWeight: FontWeight.w700,
+    color: appColor.AppColor_black,
+  );
+}
+
+TextStyle appBarTextStyle() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontSize: fontSize.fontSize_20,
+    fontWeight: FontWeight.w700,
+    color: appColor.primaryTextDark,
+  );
+}
+
+TextStyle customHintTextStyle(){
+  return TextStyle(
+    fontFamily: "Inter",
+    fontSize: fontSize.fontSize_14,
+    fontWeight: FontWeight.w400,
+    color: appColor.mutedBlueGray
+  );
+}
+
+TextStyle textButtonStyle(){
+  return TextStyle(
+    fontFamily: "Inter",
+    fontSize: fontSize.fontSize_12,
+    fontWeight: FontWeight.w400,
+    color: appColor.primaryBlue
+  );
+}
+
+TextStyle customBtnStyle(){
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w500,
+    color: appColor.bgWhite
+  );
+}
