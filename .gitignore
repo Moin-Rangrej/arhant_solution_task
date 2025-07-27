@@ -102,3 +102,5 @@ fastlane/test_output/
 
 # Melos (optional for monorepo)
 .melos_tool/
+
+.vscode/templates
