@@ -28,28 +28,47 @@ TextStyle appBarTextStyle() {
   );
 }
 
-TextStyle customHintTextStyle(){
+TextStyle customHintTextStyle() {
   return TextStyle(
     fontFamily: "Inter",
     fontSize: fontSize.fontSize_14,
     fontWeight: FontWeight.w400,
-    color: appColor.mutedBlueGray
+    color: appColor.mutedBlueGray,
   );
 }
 
-TextStyle textButtonStyle(){
+TextStyle textButtonStyle() {
   return TextStyle(
     fontFamily: "Inter",
     fontSize: fontSize.fontSize_12,
     fontWeight: FontWeight.w400,
-    color: appColor.primaryBlue
+    color: appColor.primaryBlue,
   );
 }
 
-TextStyle customBtnStyle(){
+TextStyle customBtnStyle() {
   return TextStyle(
     fontFamily: "Inter",
     fontWeight: FontWeight.w500,
-    color: appColor.bgWhite
+    color: appColor.bgWhite,
+  );
+}
+
+TextStyle errorTextStyle() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w500,
+    color: appColor.errorColor,
+  );
+}
+
+// Edit Profile Text style
+
+TextStyle editProfileTitle() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    fontSize: fontSize.fontSize_16,
+    color: appColor.primaryTextDark,
   );
 }

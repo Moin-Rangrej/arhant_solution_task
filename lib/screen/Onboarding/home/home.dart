@@ -19,7 +19,7 @@ class _HomeState extends State<Home> {
 
   String? userName(value) {
     if (value == null || value.isEmpty) {
-      return 'Please enter some text';
+      return 'Please enter userName or phoneNumber';
     }
     return null;
   }
@@ -34,6 +34,7 @@ class _HomeState extends State<Home> {
   }
 
   void onPressSaveChange() {
+    FocusManager.instance.primaryFocus?.unfocus();
     if (_formKey.currentState!.validate()) {
       print("Username: ${usernameController.text}");
       print("Password: ${passwordController.text}");
@@ -66,11 +67,8 @@ class _HomeState extends State<Home> {
                     hintText: "Username or Phone Number",
                     textCapitalization: TextCapitalization.words,
                     textInputAction: TextInputAction.next,
+                    textInputType: TextInputType.text,
                     validator: userName,
-                    inputBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(8)),
-                      borderSide: BorderSide.none,
-                    ),
                   ),
                   SizedBox(height: height * 0.025),
                   CustomTextfield(
@@ -78,12 +76,9 @@ class _HomeState extends State<Home> {
                     hintText: "Password",
                     obsecureText: true,
                     textCapitalization: TextCapitalization.words,
+                    textInputType: TextInputType.text,
                     textInputAction: TextInputAction.done,
                     validator: passwordValidator,
-                    inputBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(8)),
-                      borderSide: BorderSide.none,
-                    ),
                   ),
                   CustomTextbutton(onPress: () {}, text: "Forgot Password?"),
                   Divider(color: appColor.lightCoolGray),

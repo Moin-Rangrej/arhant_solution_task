@@ -17,6 +17,10 @@ class CustomTextfield extends StatelessWidget {
   final String? hintText;
   final TextStyle? hintTextStyle;
   final TextStyle? textfieldInputStyle;
+  final String? title;
+  final TextStyle? titleStyle;
+  final double? radius;
+  final double? sizeBoxHeight;
 
   const CustomTextfield({
     super.key,
@@ -34,6 +38,10 @@ class CustomTextfield extends StatelessWidget {
     this.hintText,
     this.hintTextStyle,
     this.textfieldInputStyle,
+    this.title,
+    this.titleStyle,
+    this.radius,
+    this.sizeBoxHeight,
   });
 
   @override
@@ -43,22 +51,40 @@ class CustomTextfield extends StatelessWidget {
         vertical: verticalpadding ?? 0,
         horizontal: horizontalpadding ?? 0,
       ),
-      child: TextFormField(
-        controller: textEditingController,
-        autovalidateMode: AutovalidateMode.onUserInteraction,
-        keyboardType: textInputType,
-        validator: validator,
-        textInputAction: textInputAction,
-        obscureText: obsecureText ?? false,
-        textCapitalization: textCapitalization ?? TextCapitalization.none,
-        style: textfieldInputStyle ?? textfieldStyle(),
-        decoration: InputDecoration(
-          border: inputBorder ?? InputBorder.none,
-          fillColor: textfieldBGColor ?? appColor.lightGrey40,
-          filled: isFilled ?? true,
-          hintText: hintText,
-          hintStyle: hintTextStyle ?? customHintTextStyle(),
-        ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          if (title != null) ...[
+            Text(title ?? "", style: titleStyle ?? editProfileTitle()),
+            SizedBox(height: sizeBoxHeight ?? 8),
+          ],
+          TextFormField(
+            autofocus: true,
+            controller: textEditingController,
+            autovalidateMode: AutovalidateMode.onUserInteraction,
+            keyboardType: textInputType,
+            validator: validator,
+            textInputAction: textInputAction,
+            obscureText: obsecureText ?? false,
+            textCapitalization: textCapitalization ?? TextCapitalization.none,
+            style: textfieldInputStyle ?? textfieldStyle(),
+            decoration: InputDecoration(
+              errorStyle: errorTextStyle(),
+              border:
+                  inputBorder ??
+                  OutlineInputBorder(
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(radius ?? 8),
+                    ),
+                    borderSide: BorderSide.none,
+                  ),
+              fillColor: textfieldBGColor ?? appColor.lightGrey40,
+              filled: isFilled ?? true,
+              hintText: hintText,
+              hintStyle: hintTextStyle ?? customHintTextStyle(),
+            ),
+          ),
+        ],
       ),
     );
   }

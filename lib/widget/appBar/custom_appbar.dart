@@ -28,14 +28,14 @@ class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Text(title, style: textStyle ?? appBarTextStyle()),
+      title: Text(title, style: textStyle ?? appBarTextStyle()), 
       centerTitle: isCenter ?? true,
       shape: Border(
         bottom:
             borderSide ??
             BorderSide(
               color: appColor.lightCoolGray, // Color of the bottom line
-              width: 2.0, // Thickness of the bottom line
+              width: 1.0, // Thickness of the bottom line
             ),
       ),
       actions: isActionShow ?? false
