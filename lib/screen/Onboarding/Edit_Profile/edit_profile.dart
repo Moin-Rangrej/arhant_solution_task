@@ -69,7 +69,7 @@ class _EditProfileState extends State<EditProfile> {
       resizeToAvoidBottomInset: true,
       appBar: CustomAppbar(title: "Edit Profile"),
       body: Parent(
-        paddingHorizontal: width * 0.04,
+        paddingHorizontal: width * 0.08,
         paddingVertical: height * 0.04,
         childWidget: SingleChildScrollView(
           child: Form(

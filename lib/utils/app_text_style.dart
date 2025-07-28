@@ -72,3 +72,29 @@ TextStyle editProfileTitle() {
     color: appColor.primaryTextDark,
   );
 }
+
+TextStyle userProfileName() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w500,
+    fontSize: fontSize.fontSize_22,
+  );
+}
+
+TextStyle userProfileEmail() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    fontSize: fontSize.fontSize_16,
+    color: appColor.slateIndigo,
+  );
+}
+
+TextStyle editProfileText() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w500,
+    fontSize: fontSize.fontSize_16,
+    color: appColor.AppColor_black,
+  );
+}

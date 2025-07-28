@@ -23,6 +23,7 @@ flutter:
 
   assets:
     - lib/assets/fonts/
+    - lib/assets/image/
 
   fonts:
     - family: Inter

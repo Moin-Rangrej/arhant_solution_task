@@ -6,6 +6,7 @@ class fontSize {
   static const double fontSize_16 = 16;
   static const double fontSize_18 = 18;
   static const double fontSize_20 = 20;
+  static const double fontSize_22 = 22;
 }
 
 class appColor {
@@ -17,9 +18,15 @@ class appColor {
   static const Color primaryBlue = Color(0xFF007AFF);
   static const Color bgWhite = Color(0xFFFFFFFF);
   static const Color errorColor = Color(0xFFFF0000);
+  static const Color slateIndigo = Color(0xFF5E668C);
+
 }
 
 class validation {
   static final emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
   static final phoneRegex = RegExp(r'^[6-9]\d{9}$');
+}
+
+class appImage {
+  static const imagePath = "lib/assets/image";
 }
