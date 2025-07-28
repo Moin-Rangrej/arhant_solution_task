@@ -19,7 +19,11 @@ class appColor {
   static const Color bgWhite = Color(0xFFFFFFFF);
   static const Color errorColor = Color(0xFFFF0000);
   static const Color slateIndigo = Color(0xFF5E668C);
-
+  static const Color lightGray = Color(0xFFDBDBE0);
+  static const Color darkCoolGray = Color(0xFF667085);
+  static const Color lightApplegreen = Color(0x1A34C759);
+  static const Color appSuccessGreen = Color(0xFF34C759);
+  static const Color lightRedColor = Color(0x80FF3B30);
 }
 
 class validation {

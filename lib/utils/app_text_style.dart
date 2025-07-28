@@ -98,3 +98,50 @@ TextStyle editProfileText() {
     color: appColor.AppColor_black,
   );
 }
+
+TextStyle stockItemTitle() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w700,
+    fontSize: fontSize.fontSize_16,
+    color: appColor.AppColor_black,
+  );
+}
+
+TextStyle stockItemSubTitle() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    fontSize: fontSize.fontSize_14,
+    color: appColor.darkCoolGray,
+  );
+}
+
+TextStyle stockContainerColor() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    fontSize: fontSize.fontSize_12,
+    color: appColor.darkCoolGray,
+  );
+}
+
+TextStyle stockContainerQuantity() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    fontSize: fontSize.fontSize_12,
+    color: appColor.AppColor_black,
+  );
+}
+
+TextStyle inStockText(String stockColor) {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    fontSize: fontSize.fontSize_12,
+    color: stockColor == "In Stock"
+        ? appColor.appSuccessGreen
+        : appColor.errorColor,
+  );
+}
