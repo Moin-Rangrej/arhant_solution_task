@@ -1,4 +1,4 @@
-import 'package:arhant_solution_task/screen/Onboarding/stock/product.dart';
+import 'package:arhant_solution_task/screen/Onboarding/stock/product/product.dart';
 import 'package:arhant_solution_task/screen/parent.dart';
 import 'package:arhant_solution_task/utils/data.dart';
 import 'package:arhant_solution_task/widget/appBar/custom_appbar.dart';

@@ -24,6 +24,9 @@ class appColor {
   static const Color lightApplegreen = Color(0x1A34C759);
   static const Color appSuccessGreen = Color(0xFF34C759);
   static const Color lightRedColor = Color(0x80FF3B30);
+  static const Color softGray = Color(0xFF86868B);
+  static const Color ghostWhite = Color(0xFFF0F2F5);
+  static const Color steelBlue = Color(0xFF4A739C);
 }
 
 class validation {

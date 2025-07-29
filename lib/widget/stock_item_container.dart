@@ -2,7 +2,6 @@ import 'package:arhant_solution_task/utils/app_text_style.dart';
 import 'package:arhant_solution_task/utils/utils.dart';
 import 'package:arhant_solution_task/widget/label.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class StockItemContainer extends StatelessWidget {
   final Widget child;

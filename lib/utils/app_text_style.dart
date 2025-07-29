@@ -57,7 +57,7 @@ TextStyle customBtnStyle() {
 TextStyle errorTextStyle() {
   return TextStyle(
     fontFamily: "Inter",
-    fontWeight: FontWeight.w500,
+    fontSize: fontSize.fontSize_14,
     color: appColor.errorColor,
   );
 }
@@ -143,5 +143,119 @@ TextStyle inStockText(String stockColor) {
     color: stockColor == "In Stock"
         ? appColor.appSuccessGreen
         : appColor.errorColor,
+  );
+}
+
+// product screen style
+
+TextStyle productTitle() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w800,
+    fontSize: fontSize.fontSize_20,
+    color: appColor.AppColor_black,
+  );
+}
+
+TextStyle productContainerText() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    fontSize: fontSize.fontSize_16,
+    color: appColor.AppColor_black,
+  );
+}
+
+TextStyle productContainerSubText() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    fontSize: fontSize.fontSize_14,
+    color: appColor.softGray,
+  );
+}
+
+TextStyle productBtnStyle() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    fontSize: fontSize.fontSize_14,
+    color: appColor.bgWhite,
+  );
+}
+
+TextStyle stockHistoryText() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w800,
+    fontSize: fontSize.fontSize_20,
+    color: appColor.AppColor_black,
+  );
+}
+
+TextStyle categoryName() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    fontSize: fontSize.fontSize_16,
+    color: appColor.AppColor_black,
+  );
+}
+
+TextStyle categoryPrice() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    fontSize: fontSize.fontSize_16,
+    color: appColor.AppColor_black,
+  );
+}
+
+TextStyle categoryDate() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    fontSize: fontSize.fontSize_12,
+    color: appColor.softGray,
+  );
+}
+
+// vendor  screen textstyle
+
+TextStyle searchvendorText() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w100,
+    fontSize: fontSize.fontSize_16,
+    color: appColor.softGray,
+  );
+}
+
+TextStyle searchvendorInputText() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    fontSize: 8,
+    color: appColor.AppColor_black,
+  );
+}
+
+// vendor screen style
+
+TextStyle vendorCompany() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w500,
+    fontSize: fontSize.fontSize_16,
+    color: appColor.AppColor_black,
+  );
+}
+
+TextStyle vendorOtherData() {
+  return TextStyle(
+    fontFamily: "Inter",
+    fontWeight: FontWeight.w400,
+    fontSize: fontSize.fontSize_14,
+    color: appColor.softGray,
   );
 }
